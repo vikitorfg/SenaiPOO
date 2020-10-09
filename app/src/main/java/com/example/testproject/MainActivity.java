@@ -16,8 +16,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickBtnMostrar(View v) {
-        EditText editText = findViewById(R.id.et_texto);
-        Toast.makeText(MainActivity.this, editText.getText(), Toast.LENGTH_LONG).show();
+        EditText firstText = findViewById(R.id.et_texto);
+        EditText secondText = findViewById(R.id.et_texto2);
+
+        String fullString = firstText.getText().toString() + " " + secondText.getText().toString();
+
+        Toast.makeText(MainActivity.this, fullString, Toast.LENGTH_LONG).show();
+    }
+
+    public void onClickBtnLimpar(View v) {
+        EditText firstText = findViewById(R.id.et_texto);
+        EditText secondText = findViewById(R.id.et_texto2);
+
+        firstText.setText("");
+        secondText.setText("");
     }
 
 }

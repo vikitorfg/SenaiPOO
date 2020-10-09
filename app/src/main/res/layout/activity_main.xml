@@ -15,11 +15,26 @@
         android:hint="Digite um texto"
         android:inputType="textPersonName" />
 
+    <EditText
+        android:id="@+id/et_texto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Digite outro texto"
+        android:inputType="textPersonName" />
+
     <Button
         android:id="@+id/btn_mostrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClickBtnMostrar"
         android:text="Mostrar" />
+
+    <Button
+        android:id="@+id/btn_limpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBtnLimpar"
+        android:text="Limpar" />
 
 </LinearLayout>
